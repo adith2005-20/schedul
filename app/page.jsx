@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <button onClick={handleDelete} className="bg-red-500 hover:bg-red-700 px-2 py-1 rounded-lg">Clear</button>
+      {processes.length>0 && <button onClick={handleDelete} className="bg-red-500 hover:bg-red-700 px-2 py-1 rounded-lg">Clear</button>}
       </div>
 
       {/* Run Algorithm Button */}
